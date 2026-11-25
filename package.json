@@ -1,0 +1,24 @@
+{
+  "name": "@catrolling/schema-ui-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "build": "corepack pnpm -r run build",
+    "typecheck": "corepack pnpm -r run typecheck",
+    "test": "corepack pnpm -r run test",
+    "test:watch": "corepack pnpm -r run test:watch",
+    "dev": "corepack pnpm --filter @catrolling/playground run dev",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "corepack pnpm build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7",
+    "@types/node": "^26.6.6",
+    "@vitest/coverage-v8": "^4.0.8",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.1",
+    "vitest": "^4.0.8"
+  }
+}
